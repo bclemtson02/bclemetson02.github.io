@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bret Clemetson, Portfolio</title>
-    <!-- Link to main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <!-- ArcGIS Embeddable Map Script -->
     <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
 </head>
 <body>
@@ -32,6 +30,7 @@
             <li><a href="mailto:bclemetson9529@sdsu.edu">Email</a></li>
             <li><a href="https://github.com/bclemetson02" target="_blank">GitHub</a></li>
         </ul>
+
         <!-- Embedded ArcGIS Map -->
         <arcgis-embedded-map 
             style="height:600px;width:700px;" 
@@ -42,6 +41,9 @@
             information-enabled 
             portal-url="https://sdsugeo.maps.arcgis.com">
         </arcgis-embedded-map>
+
+        <!-- Embedded Leaflet Map -->
+        <iframe src="/assets/maps" width="800" height="600" frameborder="0"></iframe>
     </footer>
 </body>
 </html>
