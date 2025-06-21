@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Bret Clemetson, Portfolio</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Bret Clemetson!</h1>
-				<p>I am getting my Master's in BDA from San Diego State University.<a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:bclemetson9529@sdsu.edu">email</a></li>
-        		<li><a href="https://bclemtson02.github.io/bclemetson02.github.io"/>github.com/bretclemetson</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bret Clemetson, Portfolio</title>
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!-- ArcGIS Embeddable Map Script -->
+    <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="blurb">
+            <h1>Hi there, I'm Bret Clemetson!</h1>
+            <p>I am getting my Master's in BDA from San Diego State University. 
+            <a href="/about">Read more about my life...</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="mailto:bclemetson9529@sdsu.edu">Email</a></li>
+            <li><a href="https://github.com/bclemetson02" target="_blank">GitHub</a></li>
+        </ul>
+        <!-- Embedded ArcGIS Map -->
+        <arcgis-embedded-map 
+            style="height:600px;width:700px;" 
+            item-id="545a4cc4be574e87a42061f667004c12" 
+            theme="light" 
+            heading-enabled 
+            legend-enabled 
+            information-enabled 
+            portal-url="https://sdsugeo.maps.arcgis.com">
+        </arcgis-embedded-map>
+    </footer>
+</body>
 </html>
