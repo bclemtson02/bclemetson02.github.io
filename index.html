@@ -31,21 +31,55 @@
             <li><a href="https://github.com/bclemetson02" target="_blank">GitHub</a></li>
         </ul>
 
-        <!-- Embedded ArcGIS Map -->
-        <arcgis-embedded-map 
-            style="height:600px;width:700px;" 
-            item-id="545a4cc4be574e87a42061f667004c12" 
-            theme="light" 
-            heading-enabled 
-            legend-enabled 
-            information-enabled 
-            portal-url="https://sdsugeo.maps.arcgis.com">
-        </arcgis-embedded-map>
+        <!-- ArcGIS Map -->
+        <section style="margin-top: 40px;">
+            <h2>ArcGIS Embedded Map</h2>
+            <arcgis-embedded-map 
+                style="height:600px;width:100%;max-width:900px;" 
+                item-id="545a4cc4be574e87a42061f667004c12" 
+                theme="light" 
+                heading-enabled 
+                legend-enabled 
+                information-enabled 
+                portal-url="https://sdsugeo.maps.arcgis.com">
+            </arcgis-embedded-map>
+        </section>
 
-        <!-- Embedded Leaflet Map -->
-        <iframe src="asset/maps/PetcoMap.html" width="800" height="600" frameborder="0"></iframe>
+        <!-- Local Leaflet Map -->
+        <section style="margin-top: 40px;">
+            <h2>Leaflet Map - PETCO Park</h2>
+            <iframe 
+                src="/assets/maps/PetcoMap.html" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                style="border:1px solid #ccc;">
+            </iframe>
+        </section>
 
-        <iframe src="https://insights.arcgis.com/#/embed/e55ff867d5614795984d0fafe283dc62" width="100%" height="100%" frameborder="0"></iframe>
+        <!-- ArcGIS Insights Map -->
+        <section style="margin-top: 40px;">
+            <h2>ArcGIS Insights Map</h2>
+            <iframe 
+                src="https://insights.arcgis.com/#/embed/e55ff867d5614795984d0fafe283dc62" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                style="border:1px solid #ccc;">
+            </iframe>
+        </section>
+
+        <!-- ArcGIS Dashboard -->
+        <section style="margin-top: 40px; margin-bottom: 60px;">
+            <h2>ArcGIS Dashboard</h2>
+            <iframe 
+                src="https://www.arcgis.com/apps/dashboards/a4e35d9c973f4a43909e216352a0fa9d" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                style="border:1px solid #ccc;">
+            </iframe>
+        </section>
     </footer>
 </body>
 </html>
